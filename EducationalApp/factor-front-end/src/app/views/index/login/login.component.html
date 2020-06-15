@@ -1,0 +1,37 @@
+<div class="row back maxmargin" [ngStyle]="{ 'background-image': 'url(./assets/campus-night-1500.jpg)' }">
+	<div class="col-lg-4 col-md-4 col-sm-12"></div>
+	<div class="col-lg-4 col-md-4 col-sm-12">
+		<div class="login">
+			<img class="iit-logo" alt="Illinois Institute of Technology Logo" src="./assets/IIT_Logo_stack_186_blk.svg">
+			<form [formGroup]="loginForm" (ngSubmit)="verifyUser()">
+				<div class="form-group">
+					<label for="email" i18n>Username:</label><br>
+					<input id="email" type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+					<div *ngIf="submitted && f.email.errors" class="text-danger">
+						<div *ngIf="f.email.errors.required" i18n>Email is required</div>
+						<div *ngIf="f.email.errors.email" i18n>Email must be a valid email address</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="password" i18n>Password:</label><br>
+					<input id="password" type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"  />
+					<div *ngIf="submitted && f.password.errors" class="text-danger">
+						<div *ngIf="f.password.errors.required" i18n>Password is required</div>
+						<div *ngIf="f.password.errors.minlength" i18n>Password must be at least 5 characters</div>
+					</div>
+          		</div>
+          		<div class="row">
+					<button type="submit" class="btn btn-primary mr-auto" style="margin-left: 15px;" i18n>Login</button>
+					<button type="button" (click)="forgotPasswordForm()" class="btn btn-secondary" style="margin-right: 15px;" i18n>Forgot Password?</button>
+				</div>
+			</form>
+		</div>
+  	</div>
+  	<div class="col-lg-4 col-md-4 col-sm-12"></div>
+	<div class="bottomright">
+		<ng-template ngFor let-lang [ngForOf]="languages">
+			<span *ngIf="lang.code !== localeId"><a href="/{{lang.code}}/"><img alt="up" src="./assets/{{lang.img}}.svg" width="15" height="15"></a> </span>
+			<span *ngIf="lang.code === localeId"><img style="filter: grayscale(100%);" alt="up" src="./assets/{{lang.img}}.svg" width="15" height="15"> </span>
+		</ng-template>
+	</div>
+</div>

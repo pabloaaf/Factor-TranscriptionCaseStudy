@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "c31d1c56-54c1-4ba1-ae52-c1eaf243ef13",
+		"name": "grpc tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "transcribessh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "file",
+							"value": "masc1.mp4",
+							"type": "text"
+						},
+						{
+							"key": "perfect",
+							"value": "Okay. Welcome back to part two. Um, sorry. I had that, um, kind of suddenly stopped there. I had a computer issue. I needed to restart completely, But we left off here the SSH keygen command, and I wanted to actually show you. So I gathered a fresh system, and in order to know this is a Linux system, you can see it's a virtual machine here, but, um, RSA keys, are system agnostic. So we just type this work on windows is work on Mac, right? If you're using Windows seven, this may or may not work, but I don't think we have anybody using Windows seven. What he said when there's windows 10 as ages now, natively part of windows. You don't have to use third  party. Ah, cygwin or bash SSH or sort of get SSH or anything. It's actually now fully compiled. And and we did that exercise earlier. So if you type SSH keygen, uh, by default, you'll see the the location. All right. I was going to enter. It says for pass phrase is. Don't want to pass phrase, enter again. Will will. There you should see something that looks like this. And now if I do an ls, um, till the dot slash ssh you will see that I have, amongst other things. But do you have an id RSA and id rsa pub. Ah. Now, the name of the file actually doesn't matter. One of the public, one of the private key, right? You can probably guess which ones which. Um, the important part is the contents of the headers and the length and they're tell you, actually, so you could rearrange the names if you wanted to. That wouldn't change what it is. So let's just take a look real quickly. cat. Uh, id RSA stage. Right. You see that? These lines are important. This dash, dash, begin and ends. Uh, and then here, the public key, you can see right there. Now, the private key wanna guard with your life, right? Like I'm going to destroy the key after the videos done. Um, the private key wanna guard with your life? Because it's just like if I find the key to your house or way that, uh, the the swipe card to get into your business. Right. Uh, I don't have to know anything about who you are or what Uh um, what privileges you have. But as long as I can get into, um, you know, I can swipe that card or put that key in the lock I can get in. Public key, on the other hand, is meant to be freely distributed because it's half of the key pair, unless you have the exclusive match and the chances of you randomly generating exclusive match are astronomically zero. Uh, and so the public can you can distribute. This is the whole RSA public. Keep private key. Uh, distribution of of secrets methodology that's been developed improving over and over and over again. Um, covered in a couple of your classes. Um, there. I've got a link. If you want to know more, right, there's a good link. Take it to obviously sort of Wikipedia and go from there. Um, there's a lot deeper and better information, but that just general overview if you're still not sure. Um, so we have these keys, we're done. Okay. Ah, Well, what do we do with them? Well, I was going to the next section deployed keys. So um, each of you were made an admin for your teams. Repo. Not for the the whole organization, but for your team. Uh, and so if you're on team 5 or 6 or something, you know, whichever team you're on your status is all admin that you're also able to add get hope, add on and and plugins as well. Uh, but the main point here is, you know, see that there's a settings tab. Okay. And you're able to go into the settings tab and you notice there's a link call deployed keys. Okay, so I'm going to pull this up here, uh, github, and I'm going to pull up. Right, um 20 to pull the team from last year. Right. Team nine. Okay. And, uh, I go to settings. Right. You will see that each Mm. Uh, and then the deploy keys. Now, these are they're not even keys. These are fingerprints. So you won't even actually see the public key. But you can see that, um, each member of the team Drawn Eric Antwan Ceo, right. Uh, in in case Mister Fog's put in a couple of places, each person added their own keys and then down here. And this this is my my key up here, I added. Right. Um and so what I'm going to do is come back to this little sample one I showed you here and this is the public key, I'm gonna copy the public key content. Okay.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "192.168.1.132:4000/message/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"132"
+					],
+					"port": "4000",
+					"path": [
+						"message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transcribetwopers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "file",
+							"value": "conversation.mp4",
+							"type": "text"
+						},
+						{
+							"key": "perfect",
+							"value": "I talked to a lot of people who are traditional admins, and they basically set up some sort of automation, even if it's bearable. Bass scripts to initialize an instance the same way, regardless of what are your initializing so is there doing. Unix Linux, Whatever. Even windows they're trying to find a genius solution. The home with a solution. There were probably everybody's in my brain, and so they insure that that just been up. And as long as that's the case and I mean people, right, somebody goes role, does it. You can't do that at the cold tripping and people think, but that that's what when you said you have to cut it off the network and what I'm gonna say is not complain, and then everyone, the process. So this is kind of hard because it's easy to just put something out. Technology laptop out in front and a couple laptops at home. Right. You can deploy something on Amazon. You can put something out really quick, but it's kind of musulim memory the Japanish word is kada. Like a repeted thing that becomes a habit and becomes part of you. So we're ganna include some best practices for operations and development. DevOps right there is your, uh, playing with DevOps as a drinking game right now? I don't think you can have yours right now. They mention right. Ah, show how developers can better enable monitoring. This is for you know, this class is lifted on the ITMO, but it's really no artificial split that says it's only an operation systems class right, developers beneficts as well here. an that's when you're developing a brand new program or you inherit or have to maintain something, so we wanna not excluded that we're all operations people here not saying. arg I never be a developer. You never know. I want to learn how to address changes in IT, dinamic IT environment. Well, what I mean is that in bigger of your comedy, not really hard. What I see is while bigger your hire companies. Becouse what people do is don't know our role. And then if you do try to cut them off, as I'm said, go up and then from down, can you cut them off. And then you are forced to. Because so the answer I would think is the driving through. May do your job, do it well, when your people get promoted, eventually you get promoted to the senior and then kind of trigh it down. I don't like. True, But most people that want to do tecnical things tend to either not want to do management or lack the skill to do, management. And so that's the challenge that I've seen it. Any grassroots movement I started at my workplace Don't sustain because one day needs founding and needs to be shot from the top. Right? Unless you have a champion at that big boy table. Yeah, big big boy/girl table, right? Be professional table. How about that, uh, where people or the people Let me have that we're not in your money at nine. Or was it for that? You are wasn't able or whatever they do so that at least times I've seen it where I'm working with people who are like technical 5, 6 a part of me, architects all of that. But even there. They don't control the budget, right? The budget comes from upper men from a director VP between those. So you need people on this class. Yes, but they would write right. Oh, who knows, any CTI, CTO or something. That would be great. But going back, they have an interest in understanding the tech. Yeah. And what is that? They're also the thing that they are there because they don't want to do the job you are doing. They thrust you to do it. Then thrust me and give me the money, I ask for. So, we will hoppefully see as the generation Go. And you just hear you on line watching as graduate go and kind of multiply the knowledge might turnover in time And we might be at the edge, funny eh. So page 16 what is monitoring and why do we mention here. Some people may be aware of it or may have some ideas? Why doesn't exist. Yeah, I what we get in there? Yeah, yeah, So what is monitoring.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "192.168.1.132:4000/message/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"132"
+					],
+					"port": "4000",
+					"path": [
+						"message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transcribeautomation-1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "file",
+							"value": "masc2.mp4",
+							"type": "text"
+						},
+						{
+							"key": "perfect",
+							"value": "Good evening. Good morning. Good afternoon. Wherever you are. What if you're doing this is for, uh, I This is, uh it's march 11th. This is ITM 430. This is a small companion video to a document just posted an automation demonstration. Uh, you will find in, blackboard under class notes. You will find a folder that the automation demo within it. There's a PDF. This companion video is kind of an explanation. An exposition of the content in the document. Um, here. Mhm. And we go through it to talk about, ah, some suggestions and also deposit some questions, uh, in the pursuit of automation when we moved the human out of the central focus. Um, some situations come up that we may not have thought about, right? Especially in regards to authentication secrets. Um, how to configure systems. Right. Uh, what user are you. What kind of permission? So these are things that we want you to think about, and it's kind of training to think about the bigger picture of what's going on with the computer, right? And so we want you to know, uh, what's going on? You know, why is it, doing what it's doing. I'm going to go through this demo. We're going to make some suggestions on how to solve these questions. Uh, some of the suggestions are are adequate. Uh, but not maybe not the best, right? There's a lot of other options out there. Um, but I want to present you at least something. Ah, in your pursuit of automating these systems. Okay, so let's go through what we have here. And I'm going to break this up into smaller chunks of videos. Uh, so that, um, some parts might be review some parts. Might be, um, you already know some parts. Uh, you might want to jump to the end so that everyone take the parts as they need. All right. So here's our automation demo, and our small demo will show the concept of application automation, our objectives. Right. So this whole the 10 page document, we're going to discuss and explain issues of authentication and access with automation. Okay, these things come up. We need to understand what we're getting into when we decided to automate application stalls. uh, we're going to understand secrets management and discuss potential software solutions. Right? Very important. Managing secret. Uh, we're going to discuss and understand the creation and use of SSH or also known as RSA Keys. Uh, and how they work with private repositories, right? How we can clone code. That's not public. Ah, describe and understand the functional domains of packer and vegrant. No packer and make it into two pieces of software that have two different domains. This is important to understand what they're domain of, what they do and how they're different. Ah, and why they're we're we're going to suggest them, uh, for use in this case, uh, we're going to describe how to manage the creation of virtual machine images and artifacts with Packer. Right, That's packers domain to build artifacts. We're going to describe how to manage creating start those virtual machine in vagrant right vagrants Job is to manage and start those virtual machines. And then we can describe how to manage private networking in virtual box in vagrant for application deployment on your local computer. And this is really an amazing feature that we have nowadays that makes this ah, very easy. This whole idea of automation animation on a laptop, your own laptop on a desktop or even in the lab computer, which we have, uh, lab facilities and the next room over texts out 2033. And finally, we're going to describe and understand the concept of provisioning and then post processing a virtual machine artifacts. There's allows us to not only just install a base operating system, but we can now customize it completely to be exactly the way we want right to get our image, to get our software to get a code, dependencies, everything there are so we have a full knowledge in control of what's on the system. Okay, and at the outcome, right the end of the demonstration, you'll be able to deploy and create two virtual machines. I'm gonna give you some sample code that will will get you started containing a sample node.Js application and a sample relational database using MariaDB that will insert, make a table and insert records will show you how to seed root passwords for a database. And then how to, um, configuration file for the database? Uh, we are gonna use Packer and them and run and manage it by a vagrant. And then you'll successfully deployed this application code also from a private github repo. You've used SSh and securely used RSA keys. And also one experiment variables. So in reality under the hood. We're not We're not going to really do anything you haven't done already. Um, we've taken the security classes you've taken.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "192.168.1.132:4000/message/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"132"
+					],
+					"port": "4000",
+					"path": [
+						"message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transcribemakeup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "file",
+							"value": "masc3.mp4",
+							"type": "text"
+						},
+						{
+							"key": "perfect",
+							"value": "Okay. Welcome back. This is part two, uh, to make a video. Uhm I know the screen share cut out the last two minutes of the previous video and I apologize for that. I will back up and show you what I was talking about. But, essentially, I was on vagrantup dot com and screen sharing welcome in 3 2 1? Alright. I was on vagrantup dot com and this fine boxes like here. So these are premade apron boxes and you can see, there's one from centos. There's one from laravel. I was talking about ubuntu. And you can type in I'm an ubuntu person of xenial or by typing by. Ah bionic. You see the latest one right there? You also see third party people packaging Ah, their own distribution, which is okay. Ah, this is a bunch of the official one. This is from a guy called generic. Alright, fair enough. Alright, so that's two ways to get ah Vega boxes. We're going to first start with some of the pre made one prepared ones that come right from, uh, vagrant because, um, this is a good way just for kind of, uh, your own testing, you know, just, like, had need to, you know, try something. Uh, how to install? I don't know. I have to get server. You can use this, and and we start working right away, because, uh, we're going to add it there. Okay, Uh, just to show you also here, uh, while we were taking a break on my packages installed. Right. I've got all my tooling. So what I'm going to do is close my power shell window, and then if I come back here, I already have another one open and I type vagrant, right. Ah, dash v. Right. I will get Oops. I'm sorry. I had to close this window too. And let's go. Power shell. Okay, doesn't know, if you're installing things with chocolatey right, you need the admin prompt. But if you're just, uh, using power shell you do not need to have admin prompt. Get in to have it not working in the admin prompt. Going to screw up everything. Permission wise, if I do a vagrant dash version. Can't remember if it's dash dash or dash through. Give me the output here. So he says it shouldn't take this long. There was, uh no Dash, I think just version you can see right there. So if I type big in version okay should come back a lot quicker. Uh, some streaming the, uh, desktop. Everything I'm going to do here is a little slow, right? You'll see that I've got that. If I do Packer version right, Get version right then. Just Capital V. Right. Okay, so you'll see that I got my tools installed. You'll see the link to visual studio code. Virtual box, you're using Adam? Either way, I'm in good shape. Alright, let's go back to the book. So adding a vagrant box. Okay, So, first of all, the vagrant command, is it a command we're going to be interested in? Okay, Right. So if I type vagrant and then after the vagrant command, it has a bunch of ah, op art. Sorry. Arguments. It's not right. Yeah, arguments. So vagrant add uh sorry. Vagrants. Sorry. The box command has a bunch of options, so we're going to be working with boxes primarily so in vagrant. Most things start from the vagrant box command, so obviously, if you want to add a vagrant box we would. vagrant box add. vagrant box list. Right removed, right. The other ones, uh, we want to say worry about here, but add list and removed. So if we do a vagrant box list. Now, this one does take a minute. Even if you're not streaming things, it's interrogating vagrants, internal little databases. Come back and say, Hey, you haven't installed anything. Okay, He's probably use the vagrant box. Okay, so let's take a look here. So here the in my book, I give an example of just a bunch of things that are gone. The vagrant website. If you want to pull them in at down, sent to us seven. You know, learn about BSD as alpine molynix that bionic. Ah, go right ahead. Go right ahead. Um, I'm going to do this. I'm gonna show you a short cut. Right? So",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "192.168.1.132:4000/message/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"132"
+					],
+					"port": "4000",
+					"path": [
+						"message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transcribefem1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "file",
+							"value": "fem1.mp4",
+							"type": "text"
+						},
+						{
+							"key": "perfect",
+							"value": "of freaked out a little bit and started hiring their first usability and user experience. Engineers so and now there are three jobs at Microsoft. Is anyone know these three jobs at Microsoft. Developer? Yeah, Developer. UI/UX? Yeah, UI/UX, tester. That's it. Because the only three jobs at Microsoft. So this field is about one of the only three jobs. Of course, Vice President, Right? That's their other job. And president, Um, not all of us can be Steve Balmer, though. So we'll take the UX job or the developer and tester job. So, um my because I started adding those positions into their company. Obviously, Google cares a lot about user experience. And what do you think the medium salary for a user experience designer would be. Anyone know? No one has a friend who's a UX person. Is kind of a fun job. Um, probably about $75,000 a year. A senior UX. Designer makes about $150,000 a year, So these jobs now are about the same salary ranges as development jobs quite honestly and you'll see people charging $5,000 $10,000 dollars for like a one weekend UX workshop for companies kind of crazy now. So this field has exploded. And like the last seven years, it's very important. It's part of the Avet, um curriculum accreditation. So that's why, as an undergrad, you are forced to take it. Ha ha ha. For see you. So that's why if you're an undergrad, that's probably why you're in here. If you're a grand soon, hopefully realize that the UX job is a fun take job. And, while, you need to know about development and a lot of us jobs. Um, require you knowing, um, a lot about, uh, application development. Um, well, so you're telling people what to do and designing how they're supposed to be doing it. So that's what we're going to work with in this class is designing what to do and telling other people how to do it. Um, of course you will have the opportunity to do it yourself if he's like. So let's talk about what's the content of this course? Um, has anyone worked in design at all? Graphic design, designers, design Marine oh, you are. Give me that. So we're gonna be talking about some general UI principles and theories. Um, I'd like to think of this class this semester is an oh, much to Steve Jobs. So we want to learn how to be Steve jobs. Um, Steve jobs know how to make computer applications? No, no, didn't know how to write a line of code. Oh god did not know how to do anything, what he knew how to do with the yell at people a lot and what to see Jobs yell at people a lot for. It's not good. Make it again. That's what Steve Jobs bottom line is, it's not going to go back and make it again. Make it again. Make it again. Make it again until it's good. So what you want to work on is developing an idea of what is good. This will help you when you develop your applications to make them good. And it would also help you if you wanted to go into more management, designer, director. Um creative job where you tell other people how to make things look good. So I want you to put that Steve Jobs kind of paradise. I'm in your brain for this class. Not good until it's good. So I'll be talking about design message and processes. Um, does anyone know that the Institute of design and IIT has a degree that's kind of in this area. We will be going through a lot of the design methods and processes that you would be doing if you were, um, at institute of design. So you'll kind of get that ID perspective. Um, we're gonna be talking about interface principal standards, guidelines, design. Ah, usability testing. Usability is huge now there are companies that only do his ability testing. How hard do you think usability testing is to do. Not that hard. Really, not that hard. So, um, just the act of being interested in how people use computers and how you can make computers more usable for people like your parents or your grandparents or your siblings or those of you around you how are confused by their phone, right? How can you make things that are easier for them to use? How can you make things that will win out in market share? Because, really, at this point in time, with all the applications available, do you think there's there's any application that, like, hasn't been made so",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "192.168.1.132:4000/message/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"132"
+					],
+					"port": "4000",
+					"path": [
+						"message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transcribefem2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "file",
+							"value": "fem2.mp4",
+							"type": "text"
+						},
+						{
+							"key": "perfect",
+							"value": "remember is not a test if the user can do it or not, it's a test to see if the system matches what users want to do with it. Right. So we're testing how good the student life have is not how good Andy is at finding it. Right? That's what we're testing. We're not testing, Andy. We're testing the system. I see Andy with, like what the heck looks right? Issues. What the heck? Looks right? Thank you. Andy he is yelling at the computer now. Andy would you like some help? Does anyone know how to help Andy? Yeah, really? Ah, maybe five. That was a whole lot of assist you just gave Andy, right? So basically, if we had not help Andy, would he have been able to complete that test? No. So our completion was, um, is grated in 0.5 or one. So zero is they cannot complete the task at all. 0.5 is they could complete the task when needed to ask for help. And one is they completed the task without asking for help. So we're going to rate that a 0.5 because And he had to ask for help And how much time did and he spend looking at that? Probably a good two minutes before I asked it. Did he need help? Right, So two minute. And then how many errors that he make? Well, technically, he made one error because he couldn't find it, to start with, you would have no idea that it's under student affairs, right? He would no clue. And so that's our issues. No clue. Link is under students affairs. All right. Oh, your next task is to find a student club or organization and find out their next meeting. So find one club organization and find out their next meeting. This is also the ideal usability study because we are recording it, right? So if you were doing this for a real product, you would want to record it and then play it back to the executives. I think their system is so great so they can literally watch the user fail, right? It's just kind of say found that website",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "192.168.1.132:4000/message/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"132"
+					],
+					"port": "4000",
+					"path": [
+						"message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transcribefem3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "file",
+							"value": "fem3.mp4",
+							"type": "text"
+						},
+						{
+							"key": "perfect",
+							"value": "Here I go. you're like, Oh, gasoline, exploding something, something right, and you would probably kind of build this visualization in your head of those things in your car doing those things right? Oh, steering. And I picture the the wheels turning like there's, you know, like they're directly connected to the steering wheel. You know, that is your mental model of how a car works. You know, it's not actually how a car works, but it's what we perceive as how a car works. Um, another place where people have a lot of strong mental models are, um, with things like electricity. So electricity people think of this is like this hose or, you know, like when they plug something into the outlets, something comes out like something could come out of that outlet. This electricity pour out of the outlet when nothing's plugged into it. No, no, But you would have us believe that it's like a garden hose when you plug something in like electricity flows through the hose, you know. But that's, you know, you can't really see electricity. We just have this kind of picture in our head of that's what's going on. So the reason why we use metaphors and mental model when we're designing interfaces or designing um applications is because that's what people know, right? If I ask someone to, you know, hierarchical describe a file system, maybe like I don't know what you're talking about, right? But if I said, what's your mental model of your files on your computer? They would probably think of like Windows Explorer and the little folders, like a little folder tree right? That would be their mental model of how the files on their computer are organized. In real life what are the files on your computer? There are little edges in your hard drive, right? That's it. They're not like there's no folders inside of your laptop. You open it up, there's a little gerbil, and they're filing everything. That's not what happens, right? So the mental model is what people know, you know, because they have lack of understanding of the real um, operations. They kind of build this fake picture in their head of this is how it works. Um, so when we use things like trash can. People associate trash can with throwing things away, so we, you know, get show them a trash can to signify: Hey, this is how you throw things away. Are you really throwing things away on your computer? Are you really throwing that email away? Are you walking over to a garbage can and putting that paper email? No, that's not what happens. So we use metaphor and and we play into people's mental models when we make interfaces, because that's what they know. So we have the garbage cans to throwaway files. We have, um, the magnifying glass, right? Because when people see magnifying glass, they think that means look at it or zoom, or it's going to be magnified. Is it really magnifying the way a magnifying glass works? No, it's just, you know, pushing up your resolution. But people say magnifying glass and they go zooming right. They know what that is. Um, let's see if this guy is still alive. Um, we can think of. We see a lot of interface matter fours with mobile applications, right? Because, uh, on the computer, most people who use a computer on a regular basis you know something about the computer eventually, but on mobile phones you're talking about, these are users who probably don't know anything, and they're metaphor. Their mental model is still phone right when you pick up your cell phone. Is it like like the old wired phones where there was analog electricity going through the wire through the public switched telephone network? Is that what happens on your cell phone? No. What is your phone? It's not a super tiny computer, and that's all it is. It's a super tiny, super tiny touchscreen, right? Take your laptop. I have a tablet computer, so shrink this guy down. That's all the phone is. Why do we still have buttons and stuff like looking like it's a regular phone, right? It's not a regular phone, it's a computer. But we we make it seem like touch these buttons and you call a person just like a regular phone, because that's what people know. If we gave them new phone interface, I'd be like, I don't know what that is. I don't know how to use that phone right? That's why things like soft phone's kind of fail because people are not familiar with, like, phone on their computer. They want the phone to be, you know, the",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "192.168.1.132:4000/message/",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"132"
+					],
+					"port": "4000",
+					"path": [
+						"message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transcribeActive?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.132:4000",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"132"
+					],
+					"port": "4000"
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

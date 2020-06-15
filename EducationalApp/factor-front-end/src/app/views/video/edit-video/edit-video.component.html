@@ -1,0 +1,29 @@
+<app-header [auth]="userInfo.authlvl" [picture]="userInfo?.picture"></app-header>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading" id="top" i18n>Edit Video</h1>
+        <form [formGroup]="editVideoInfoForm" (ngSubmit)="editVideo()"><!--<form>-->
+            <div class="form-group">
+                <h3 for="sel" i18n>Course:</h3><br>
+                <select class="form-control" id="sel" formControlName="course" [ngClass]="{ 'is-invalid': submitted && f.course.errors }">
+                    <option *ngFor="let c of coursesInfo" value="{{c._id}}">{{c.number}}: {{c.name}}</option>
+                </select>
+                <div *ngIf="submitted && f.course.errors" class="text-danger">
+                    <div *ngIf="f.course.errors.required" i18n>Course is required</div>
+                </div>
+            </div>
+            <div class="form-group">
+                <h3 for="name" i18n>File name:</h3><br>
+                <input type="text" class="form-control" id="name" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+                <div *ngIf="submitted && f.name.errors" class="text-danger">
+                    <div *ngIf="f.name.errors.required" i18n>Name is required</div>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-primary mr-auto" style="margin-left: 15px;" i18n>Save</button>
+                <button type="button" (click)="DeleteClassVideo()" class="btn btn-secondary" style="margin-right: 15px;" i18n>Delete all</button>
+            </div>
+        </form>
+    </div>
+</section>
+<app-footer class="footer" [auth]="userInfo.authlvl"></app-footer>

@@ -1,0 +1,54 @@
+<app-header [auth]="userInfo?.authlvl" [picture]="userInfo?.picture"></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-7 py-4 mr-auto">
+            <figure class="mbr-figure align-center container">
+                <div class="video-block embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" id="top" [attr.autoplay]="true" (timeupdate)="resetPhrase()" controls #vid>
+                        <source *ngIf="videoInfo" src="{{uri}}{{videoInfo.url}}" type="video/mp4">
+                    </video>
+                </div>
+            </figure>
+        </div>
+        <div class="col-sm-4 col-md-5">
+            <h3>Current speech</h3>
+            <ng-container *ngFor="let p of phrases">
+                <div *ngIf="(p | videoPhrase:video.nativeElement.currentTime)"><p>{{p.p}} </p></div>
+            </ng-container>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-md-7 py-4 mr-auto">
+            <h1  *ngIf="videoInfo">{{videoInfo.name}}</h1>
+            <!-- Description or keywords for translation?? -->
+            <hr>
+            <h3 i18n>Transcripts</h3>
+            <p i18n>Show transcript complete</p>
+            <p *ngIf="videoTranscribes">{{videoTranscribes.result.transcripts}}</p>
+            <table>
+                <tr>
+                    <th i18n>Time</th><th i18n>Word</th><th *ngIf="userInfo.authlvl > 32"  i18n>Edit</th>
+                </tr>
+                <ng-container *ngIf="videoTranscribes">
+                    <tr *ngFor="let i of videoTranscribes.result.item" (click)="setVideoTime(i.start_time)">
+                        <td>{{i.start_time}}</td>
+                        <td>{{i.alternatives[0].content}}</td>
+                        <td *ngIf="userInfo.authlvl > 32"><button i18n>Edit Transcripts</button></td>
+                    </tr>
+                </ng-container>
+            </table><!-- toDo seconds to min plus sec pipeline-->
+
+            <!-- Add comments for students to send the first caption edition recommendations ?? -->
+            <!-- It would also provide a space for students to ask questions to the professor, about anything on the video. Plus, they can give an exact timestamp for accuracy ?? -->
+            <!-- Save PDF ?? -->
+        </div>
+        <div class="col-sm-4 col-md-5">
+            <table>
+                <tr><th><h3 i18n>Keywords</h3></th></tr>
+                <tr><td>docker</td></tr>
+                <tr><td>linux</td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+<app-footer class="footer" [auth]="userInfo.authlvl"></app-footer>

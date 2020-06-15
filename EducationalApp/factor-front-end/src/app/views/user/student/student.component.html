@@ -1,0 +1,45 @@
+<app-header [auth]="userInfo.authlvl" [picture]="userInfo?.picture"></app-header>
+<h1 id="top"><span i18n>Welcome</span> {{userInfo.family_name}}, {{userInfo.given_name}}</h1>
+<h3 i18n>Your courses:</h3>
+<div class="accordion" id="accordion">
+    <div class="card" *ngFor="let course of coursesInfo; let i=index">
+        <div class="card-header" id="h{{course._id}}">
+            <a class="card-link" data-toggle="collapse" href="#c{{course._id}}">
+                <h5 *ngIf="professorInfo">{{course.number}}: {{course.name}}<br>
+                    <span i18n>Professor:</span> {{professorInfo[i].family_name}}, {{professorInfo[i].given_name}}</h5>
+            </a>
+        </div>
+        <div id="c{{course._id}}" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <ng-container *ngFor="let video of videosInfo">
+                                <div class="col-md-4" *ngIf="video.courseID == course._id">
+                                    <div class="card mb-4 shadow-sm">
+                                        <img class="card-img-top" alt="Thumbnail" src="{{uri}}{{video.thumbnail}}" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                                        <div class="card-body">
+                                            <p class="card-text"><span i18n>Name:</span> {{video.name}}</p>
+                                            <p class="card-text"><span i18n>Class number:</span> {{video.class}}</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <button type="button" [routerLink]="['/std/show', video._id]" class="btn btn-sm btn-outline-secondary" i18n>View</button><!--{{video.id}}-->
+                                                </div>
+                                                <small class="text-muted">{{video.duration}}</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p i18n>Search box filter by keywords on videos?</p>
+<!--<form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search">
+        </form>-->
+<app-footer class="footer" [auth]="userInfo.authlvl"></app-footer>

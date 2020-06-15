@@ -1,0 +1,45 @@
+<h1 i18n>create course!</h1>
+<form [formGroup]="form">
+    <div class="form-group">
+        <label for="cname" i18n>Course name:</label><br>
+        <input type="text" class="form-control" id="cname" formControlName="cname" #cname>
+    </div>
+    <div class="form-group">
+        <label for="cnumber" i18n>Course number:</label><br>
+        <input type="text" class="form-control" id="cnumber" formControlName="cnumber" #cnumber>
+    </div>
+    <div class="form-group">
+        <label for="selprof" i18n>Professor:</label>
+        <select class="form-control" id="selprof" formControlName="profID" #prof>
+            <ng-container *ngFor="let p of users">
+                <option *ngIf = "p.authlvl >= 63" value="{{p._id}}">{{p.family_name}},{{p.given_name}}</option>
+            </ng-container>
+        </select>
+    </div>
+    <div class="row">
+            <button type="button" (click)="addCourse(cname.value, cnumber.value, prof.value)" class="btn btn-primary" i18n>Add</button>
+    </div>
+</form>
+
+<br><br>
+
+<h1 i18n>Add course to student/professor!</h1>
+<p i18n>show users list with select to choose the user to change</p>
+<p i18n>show list of courses to enroll</p>
+<form [formGroup]="form2">
+    <div class="form-group">
+        <label for="seluser" i18n>User:</label>
+        <select class="form-control" id="seluser" formControlName="user" #user>
+            <option *ngFor="let u of users" value="{{u._id}}">{{u.family_name}},{{u.given_name}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="selcourse" i18n>Courses:</label>
+        <select class="form-control" id="selcourse" formControlName="course" #course>
+            <option *ngFor="let c of courses" value="{{c._id}}">{{c.number}}: {{c.name}}</option>
+        </select>
+    </div>
+    <div class="row">
+        <button type="button" (click)="addCourseToUser(user.value, course.value)" class="btn btn-primary" i18n>Add</button>
+    </div>
+</form>

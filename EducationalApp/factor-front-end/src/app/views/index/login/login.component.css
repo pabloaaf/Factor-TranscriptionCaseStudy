@@ -1,0 +1,26 @@
+.back{
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.login{
+	background-color: rgba(255,255,255,0.9);
+	padding: 15px;
+	margin-top: 10vh;
+}
+
+.margin{
+	height: 10vh;
+}
+
+.maxmargin{
+	height: 100vh;
+}
+
+.bottomright {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}

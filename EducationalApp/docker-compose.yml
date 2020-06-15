@@ -1,0 +1,23 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  angular: # name of the first service
+    hostname: 192.168.1.125 # localhost
+    build: factor-front-end # specify the directory of the Dockerfile
+    ports:
+      - "80:80" # specify port forewarding
+
+  express: #name of the second service
+    build: factor-back-end # specify the directory of the Dockerfile
+    volumes:
+      - "/home/controller/factor-DC/factor-back-end/assets/:/factor/assets/"
+    ports:
+      - "3000:3000" #specify ports forewarding
+    links:
+      - database # link this service to the database service
+
+  database: # name of the third service
+    image: mongo # specify image to build container from
+    ports:
+      - "27017:27017" # specify port forewarding

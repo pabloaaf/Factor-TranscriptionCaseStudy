@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="67fc3fe0566f8700b84a908c35497759db78addc" datatype="html">
+        <source>Username:</source>
+        <target>Usuario:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login/login.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b2fd2a81342b5821f47ce0e6f2383b1403fd659" datatype="html">
+        <source>Email is required</source>
+        <target>Se requiere correo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login/login.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d17296d557e0315b665d9a45ba1be7445e9a9cd0" datatype="html">
+        <source>Email must be a valid email address</source>
+        <target>Introduzca un correo válido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login/login.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4434eb250f44b5effd90253c0c9f2bf1e69ec13f" datatype="html">
+        <source>Password:</source>
+        <target>Contraseña:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login/login.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1e20f8b8a4706526c9024cc2f39d568345d100dc" datatype="html">
+        <source>Password is required</source>
+        <target>Se requiere contraseña</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login/login.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9bca2a6444e14e71afa5e9f4fb64cf1f48ffd9cb" datatype="html">
+        <source>Password must be at least 5 characters</source>
+        <target>La contraseña debe de tener al menos 5 caracteres</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login/login.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765b4c916060f6bc42d9bb69e80377dbcb5e4e9" datatype="html">
+        <source>Login</source>
+        <target>Acceder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login/login.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6255a8674662e55d6ccc3ad46cc1dd0dd6394d75" datatype="html">
+        <source>Forgot Password?</source>
+        <target>¿Olvidó su contraseña?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login/login.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aeba58a0ed9492f2a6a05931a418007c10f6bbf3" datatype="html">
+        <source>Wait for been redirect</source>
+        <target>Espere a ser redirigido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/index/login-callback/login-callback.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="09c7707928dc232121fed544e44200d40477da62" datatype="html">
+        <source>create course!</source>
+        <target>Cree un curso!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="67b1ead39fc39e5796d1e7703ab70287b5eda5e5" datatype="html">
+        <source>Course name:</source>
+        <target>Nombre del curso:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8325972a69c9c065f67b58c5b92a98997ff0ec7e" datatype="html">
+        <source>Course number:</source>
+        <target>Número del curso:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="34f47699424c3050fd7d40794737a9d56ecc6227" datatype="html">
+        <source>Professor:</source>
+        <target>Profesor:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/student/student.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f6755cff4957d5c3c89bafce5651f1b6fa2b1fd9" datatype="html">
+        <source>Add</source>
+        <target>Añadir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2b4b9440277d63a096e41c15134a6b7570edf62c" datatype="html">
+        <source>Add course to student/professor!</source>
+        <target>Añadir curso a un estudiante/profesor!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="33691fad75a6427ee00d15a38e268e9518f640ed" datatype="html">
+        <source>show users list with select to choose the user to change</source>
+        <target>Enseñar una lista de usuarios para elegir el usuario a cambiar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bd33d720c40d2f837eabedfba367bf298b4870d7" datatype="html">
+        <source>show list of courses to enroll</source>
+        <target>Mostrar los cursos en los que registrarse</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="07eb24eb32b39b4b103c6b8ddd9d9a0c749cef67" datatype="html">
+        <source>User:</source>
+        <target>Usuario:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7530f464f8d2b7c33fc3de0d0efff80a67e7ad44" datatype="html">
+        <source>Courses:</source>
+        <target>Cursos:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/mock-data/mock-data.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cbfa0720e026204d81367a405997122fb1a4fa7a" datatype="html">
+        <source>Upload Video</source>
+        <target>Subir video</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="14da4db10ade7b8ee63ff5443b860124d9a78a26" datatype="html">
+        <source>Welcome professor</source>
+        <target>Bienvenido profesor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="59c3bda2a226b726a718458b87dccd3ecc4e1bc5" datatype="html">
+        <source>Please, upload your video following the next steps.</source>
+        <target>Por favor, suba el video siguiendo los siguientes pasos.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1984f6d4e8bda78bd4ba9d506e491330a9f9c64e" datatype="html">
+        <source>1. Select Course:</source>
+        <target>1. Selecione un curso:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b7fd8a550a9ad86de1c3626ad25ad6e294b59508" datatype="html">
+        <source>Course is required</source>
+        <target>Se requiere seleccionar un curso</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/edit-video/edit-video.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="96f574ce3cd7d0ae175167ec8541b5b800c893c2" datatype="html">
+        <source>2. Select Video:</source>
+        <target>2. Seleccione un video:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8957a78c33da1814d2cdc8e7a46204b7c141b966" datatype="html">
+        <source>Choose file </source>
+        <target>Elija un archivo </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0d15c3cbceed8c4ce19d587afc27141c3d592b17" datatype="html">
+        <source>or drag and drop file here.</source>
+        <target>o arrastre el archivo hasta aqui.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d6b38ae20ca5905652dfb47b3a70d6fd807081c5" datatype="html">
+        <source>Class video is required</source>
+        <target>Se requiere insertar un video de la clase</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b24708a1e284c3195a1d393c53eaaf377ba52fae" datatype="html">
+        <source>Class video must be in mp4 format</source>
+        <target>El video de la clase debe tener formato mp4.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4b3972c3e9485218508a95f7a4ce7758e3f09ced" datatype="html">
+        <source>Upload</source>
+        <target>Subir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="04c2b657db59c2d83ca9787cd645a36509042c7e" datatype="html">
+        <source>List of courses to unfold and see files related and edit</source>
+        <target>Lista de curso para desplegar, ver los ficheros relaccionados y editar.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="616e206cb4f25bd5885fc35925365e43cf5fb929" datatype="html">
+        <source>Name:</source>
+        <target>Nombre:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/student/student.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="26d9fe296059fcb228f209b8068d8e2dcff291f9" datatype="html">
+        <source>Class number:</source>
+        <target>Número de clase:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/student/student.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6829218544e108e152f5fa72cb79c4ccb82e0d06" datatype="html">
+        <source>View</source>
+        <target>Ver</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/professor/professor.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/student/student.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="65cc4ab3b4c438e07c89be2b677d08369fb62da2" datatype="html">
+        <source>Welcome</source>
+        <target>Bienvenido</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/student/student.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="51ea53a4f09172c85b0cffe353d75554ddf3d56b" datatype="html">
+        <source>Your courses:</source>
+        <target>Tus cursos:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/student/student.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3588af967cf5dba8c5cf0c49f0520fbffb9ee0be" datatype="html">
+        <source>Search box filter by keywords on videos?</source>
+        <target>¿Buscador por palabras clave en videos?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/user/student/student.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f9b14037924dfabf6ed15aee772046e43d2b68cb" datatype="html">
+        <source>Edit Video</source>
+        <target>Editar Video</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/edit-video/edit-video.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="779d25e0033ff996f7b60b783938ed55e5f0023c" datatype="html">
+        <source>Course:</source>
+        <target>Curso:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/edit-video/edit-video.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bd3325ee0df48999a7bce73b33b80c789a87a159" datatype="html">
+        <source>File name:</source>
+        <target>Nombre del archivo:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/edit-video/edit-video.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5b752f143ab30faa45a2679b5e7a28bbf3fb246d" datatype="html">
+        <source>Name is required</source>
+        <target>Se requiere insertar un nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/edit-video/edit-video.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+        <target>Guardar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/edit-video/edit-video.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f6cb0fa14002ba93d04c31e408367fc40426218c" datatype="html">
+        <source>Delete all</source>
+        <target>Borrar todos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/edit-video/edit-video.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="df28241733412305cb1e03b1c9a18625e4658743" datatype="html">
+        <source>Transcripts</source>
+        <target>Transcripciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/show-video/show-video.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="42c61cdf8b4dd35d975fa5080ebdebba93f62e3e" datatype="html">
+        <source>Show transcript complete</source>
+        <target>Mostrar la transcripción completa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/show-video/show-video.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b24f1cd32cbc1ec9537af28c4fe1b8204097714b" datatype="html">
+        <source>Time</source>
+        <target>Tiempo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/show-video/show-video.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9b0a085531b3557c1a2c0b98276fb31d6b0682bb" datatype="html">
+        <source>Word</source>
+        <target>Palabra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/show-video/show-video.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28f86ffd419b869711aa13f5e5ff54be6d70731c" datatype="html">
+        <source>Edit</source>
+        <target>Editar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/show-video/show-video.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="31c4397885225093f8280235a5de61b3f25ad39a" datatype="html">
+        <source>Edit Transcripts</source>
+        <target>Editar transcripciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/show-video/show-video.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f335b381271e2cc422d3b9e3c40ba794d19da4e" datatype="html">
+        <source>Keywords</source>
+        <target>Palabras clave</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/views/video/show-video/show-video.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2ca61c0c1c69972abbaa563b1b4707e5216c7ea2" datatype="html">
+        <source>Logout (door)</source>
+        <target>Cerrar Sesión (door)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/globals/navbars/header/header.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="004b222ff9ef9dd4771b777950ca1d0e4cd4348a" datatype="html">
+        <source>About</source>
+        <target>Acerca de</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/globals/navbars/footer/footer.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dba1ab7e3dbc5925fae7b0ad9dd06d4931e10a4a" datatype="html">
+        <source>This application will allow professors to distribute clear notes to their students.</source>
+        <target>Esta aplicación permitirá a los profesores distribuir notas a sus estudiantes.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/globals/navbars/footer/footer.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9fe6c520c219baf721072c798dd8ddfbc4ddf6c8" datatype="html">
+        <source>It also allows professors to create their own books from their material.</source>
+        <target>Tambien permite a los prosesores crear sus propios libros a partir de su propio material.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/globals/navbars/footer/footer.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b50a354bf6aad26c30b8c1a0aca62bb46c27d763" datatype="html">
+        <source>This application will allow students to increase their production, providing them the capacity to search keywords through their class videos</source>
+        <target>Esta aplicación permitirá incrementar la producción de los estudiantes, dandoles la capacidad de buscar palabras clave sobre sus videos de clase.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/globals/navbars/footer/footer.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="0f03eb1f27fee61229b02cb74d685bb4ad5add94" datatype="html">
+        <source>Back to top</source>
+        <target>Volver al inicio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/globals/navbars/footer/footer.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

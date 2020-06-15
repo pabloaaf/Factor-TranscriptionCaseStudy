@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row text-muted">
+        <div class="col-sm-8 col-md-7 py-4 mr-auto">
+            <h4 class="" i18n>About</h4>
+            <p *ngIf="auth >= 64" i18n>This application will allow professors to distribute clear notes to their students.</p>
+            <p *ngIf="auth >= 64" i18n>It also allows professors to create their own books from their material.</p>
+            <p *ngIf="auth < 64" i18n>This application will allow students to increase their production, providing them the capacity to search keywords through their class videos</p>
+        </div>
+        <p class="mt-auto">
+            <a href="#top" i18n>Back to top</a>
+        </p>
+    </div>
+</div>
